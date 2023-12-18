@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import './App.css'
 
 function App() {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -10,8 +11,8 @@ function App() {
     return (
         <>
             <nav className="bg-white border-gray-200 dark:bg-gray-900">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                <div className="container flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Uprajay Danny
             </span>
@@ -50,7 +51,7 @@ function App() {
                             <li>
                                 <a
                                     href="#"
-                                    className="block py-2 px-3 text-gray-900 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 px-3 text-gray-900 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Présentation
                                 </a>
@@ -58,7 +59,7 @@ function App() {
                             <li>
                                 <a
                                     href="#"
-                                    className="block py-2 px-3 text-gray-900 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 px-3 text-gray-900 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Projets
                                 </a>
@@ -66,7 +67,7 @@ function App() {
                             <li>
                                 <a
                                     href="#"
-                                    className="block py-2 px-3 text-gray-900 text-center rounded md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:text-white dark:hover:underline "
+                                    className="block py-2 px-3 text-gray-900 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Me contactez
                                 </a>
@@ -75,7 +76,22 @@ function App() {
                     </div>
                 </div>
             </nav>
+
+            <main className="md:container md:mx-auto ">
+                <section className="text-center grid grid-cols-2 bg-fuchsia-400 w-100" >
+                 <div>
+                   0
+                  </div>
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        0
+                    </div>
+                </section>
+            </main>
         </>
+
     );
 }
 
