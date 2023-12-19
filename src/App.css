@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@500&family=Ubuntu&display=swap');
 
 *{
     margin: 0;
@@ -7,17 +8,20 @@
     /*background-color: #c4bfe7;*/
 
 }
-nav{
-    color: #f3ddc6;
-    background-color: #1b374e;
+nav {
+    color: #ffffff;
+    background-color: black;
+    border-bottom: 1px solid white; /* Added 'solid' as the border style */
 }
+
 nav ul li{
-    color: #f3ddc6;
+    color: #ffffff;
 }
 body{
-    background-color: #c4bfe7;
-    font-family: 'Preahvihear', sans-serif;
+    background-color: #000000;
+    font-family: 'Rubik', sans-serif;
 }
+
 
 .fade-out {
     opacity: 0;
@@ -25,10 +29,25 @@ body{
 }
 section{
     height: 90vh;
+    /*background-color: #1b374e;*/
+}
+.portofolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.portofolio h1,
+.portofolio img {
+    margin: auto;
 }
 
 
+
 main h1{
+    color: white;
     font-size: 100px;
     font-family: 'Preahvihear', sans-serif;
 }
@@ -42,9 +61,46 @@ main h1 span{
 
  main h2{
     font-size: 80px;
-    font-family: 'Preahvihear', sans-serif;
     text-align: center;
 }
  h3{
      color: #5d46e8;
  }
+
+ .presentation{
+     background-color: #1b374e;
+     color: #f3ddc6;
+     height: 110vh;
+ }
+ .presentation img{
+     width: 30vw;
+ }
+ .presentation button{
+     background-color: #49a098;
+     color: black;
+     transition: .5s;
+ }
+.presentation button:hover{
+    background-color: #49a098;
+    color: #f3ddc6;
+}
+h5{
+    color: black;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 3px white;
+    font-size: 100px!important;
+    position: absolute;
+    letter-spacing: 50px;
+    /*left: 250px;*/
+    /*width: 100%;*/
+}
+.projet{
+    background-color: black;
+}
+.card{
+    background-color: red;
+}
+
+p {
+  font-size: 1.2rem;
+}
