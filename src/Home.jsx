@@ -1,23 +1,42 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import './App.css';
 import emailjs from '@emailjs/browser';
+import validator from "validator/es";
 
 const Home = () => {
 
+    const [messageSubmit, setMessageSubmit] = useState('');
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_kl1w8ml', 'template_gmeb9x3', form.current, 'htvVX7LITFJ9ult9M')
-            .then((result) => {
-                console.log(result.text);
-                console.log('ok')
-            }, (error) => {
-                console.log(error.text);
-                console.log('nope')
-            });
+        emailjs
+            .sendForm('service_kl1w8ml', 'template_gmeb9x3', form.current, 'htvVX7LITFJ9ult9M')
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    console.log('ok');
+                    setMessageSubmit('Votre message à bien été envoyé!');
+                },
+                (error) => {
+                    console.log(error.text);
+                    console.log('nope');
+                }
+            );
     };
+
+    const [message, setMessage] = useState("");
+    const validateEmail = (e) => {
+        const email = e.target.value;
+
+        if (validator.isEmail(email)) {
+            setMessage("Thank you");
+        } else {
+            setMessage("Please, enter valid Email!");
+        }
+    };
+
     return (
         <>
 
@@ -97,7 +116,7 @@ const Home = () => {
 
                                         <a  href="https://github.com/DannyUprajay/NFT_business_case" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(Back)</small>  </a>
 
-                                        <a href="https://github.com/DannyUprajay/Angular_NFT_HOME" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(front)</small>  <br/></a>
+                                        <a href="https://github.com/DannyUprajay/Angular_NFT_HOME" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(Front)</small>  <br/></a>
 
 
 
@@ -208,20 +227,23 @@ const Home = () => {
                                     <h2 className="mb-4 text-2xl font-bold text-white">Contact</h2>
                                     {/*<form action="">*/}
                                     <form ref={form} onSubmit={sendEmail}>
+                                        <span style={{fontWeight: "bold", color: "green"}}>{messageSubmit}</span>
                                         <div className="mb-6">
                                             <div className="mx-0 mb-1 sm:mb-4">
                                                 <div className="mx-0 mb-1 sm:mb-4">
                                                     <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label>
-                                                    <input type="text" id="name" autoComplete="given-name" placeholder="Nom*" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0" name="to_name"/>
+                                                    <input type="text" id="name"  autoComplete="given-name" placeholder="Nom*" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0" name="to_name"/>
+
                                                 </div>
                                                 <div className="mx-0 mb-1 sm:mb-4">
                                                     <label  className="pb-1 text-xs uppercase tracking-wider"></label>
-                                                    <input type="email" id="email" autoComplete="email" placeholder="E-mail*" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4  sm:mb-0" name="from_name"/>
+                                                    <input type="email" id="email" onChange={(e) => validateEmail(e)} autoComplete="email" placeholder="E-mail*" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4  sm:mb-0" name="from_name"/>
+                                                    <span style={{fontWeight: "bold", color: "red"}}>{message}</span>
                                                 </div>
                                             </div>
                                             <div className="mx-0 mb-1 sm:mb-4">
                                                 <label  className="pb-1 text-xs uppercase tracking-wider"></label>
-                                                <textarea id="textarea" name="message" cols="30" rows="5" placeholder="Message...*" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0"></textarea>
+                                                <textarea required id="textarea" name="message" cols="30" rows="5" placeholder="Message...*" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 sm:mb-0"></textarea>
                                             </div>
                                         </div>
                                         <div className="text-center">
