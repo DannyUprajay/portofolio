@@ -1,10 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Preahvihear&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: #c4bfe7;*/
 
+}
 nav{
-    font-family: 'Open Sans', sans-serif;
+    color: #f3ddc6;
+    background-color: #1b374e;
+}
+nav ul li{
+    color: #f3ddc6;
+}
+body{
+    background-color: #c4bfe7;
+    font-family: 'Preahvihear', sans-serif;
+}
 
-
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+section{
+    height: 90vh;
 }
 
 
+main h1{
+    font-size: 100px;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+main h1 span{
+    color: #49a098;
+}
+
+
+/*Page projet*/
+
+ main h2{
+    font-size: 80px;
+    font-family: 'Preahvihear', sans-serif;
+    text-align: center;
+}
+ h3{
+     color: #5d46e8;
+ }
