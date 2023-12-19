@@ -35,15 +35,16 @@ const Home = () => {
 
                 </section>
                 <hr/>
+                <a name="presentation"></a>
                 <section className={"presentation"}>
                     <h2 className={'text-center'}>Présentation </h2>
-                    <div className={'grid grid-cols-2 mt-20 container mx-auto'}>
+                    <div className={'grid lg:grid-cols-2 md:grid-cols-1 container mx-auto'}>
                         <div className={'text-center mt-20'}>
                             <p className={'text-center mb-10'}>
                               <span>Salut</span>, je m'appelle Danny, j'ai 27 ans et je suis développeur web.  J'ai récemment achevé ma formation en développement web chez Human Booster, validant ainsi le titre RNCP niveau 5 (BAC+ 2). Je souhaite désormais mettre en pratiques mes compétences dans le monde professionnel.
                             </p>
                             <p className={'mb-10'} >| Technologies :  <i
-                                className="fa-brands fa-symfony"></i> <i className="fa-brands fa-angular"></i> <i className="fa-brands fa-react"></i> <i className="fa-solid fa-database"></i>
+                                className="fa-brands fa-symfony "></i> <i className="fa-brands fa-angular"></i> <i className="fa-brands fa-react"></i> <i className="fa-solid fa-database"></i>
                                 <i className="fa-brands fa-bootstrap"></i> <i className="fa-brands fa-figma"></i> |</p>
                             <a href="src/assets/Uprajay_danny_cv.pdf" download={"Cv"}>
                                 <button className="font-bold py-2 px-4 rounded inline-flex items-center">
@@ -59,8 +60,8 @@ const Home = () => {
                 </section>
 
                 <hr/>
-
-                <section className="projet grid grid-cols-1 text-center justify-center items-center  relative">
+                <a name="projet"></a>
+                <section className="projet grid grid-cols-1 text-center justify-center items-center relative">
 
                     <h2 className={"text-white text-center"}>Projets récents</h2>
 
@@ -69,7 +70,7 @@ const Home = () => {
 
                         <div className={"grid grid-cols-1 justify-center items-center gap-5 "}>
 
-                            <div className="overflow-hidden  card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md w-full max-w-[48rem] flex-row">
+                            <div className="overflow-hidden card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md  flex-row">
 
                                 <div className=" m-0 text-gray-700 rounded-r-none overflow-hidden  bg-clip-border rounded-xl shrink-0">
                                     <img src="src/assets/lové-logo.png" alt="card-image-projetNft" className=" object-cover w-80 h-full " />
@@ -77,11 +78,11 @@ const Home = () => {
 
                                 <div className="p-6 mt-5 w-10/12 justify-end ">
                                     <h6
-                                        className="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal uppercase">
+                                        className="block mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal uppercase">
                                         Lové NFT
                                     </h6>
 
-                                    <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed ">
+                                    <p className="block mb-8 font-sans antialiased font-normal leading-relaxed ">
                                         Lové NFT est une application web qui permet de des NFT et bien plus encore...
                                     </p>
 
@@ -94,9 +95,9 @@ const Home = () => {
 
                                     <div>
 
+                                        <a  href="https://github.com/DannyUprajay/NFT_business_case" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(Back)</small>  </a>
 
-                                        <a href="https://github.com/DannyUprajay/Angular_NFT_HOME" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(front Angular)</small></a>
-                                        <a  href="https://github.com/DannyUprajay/NFT_business_case" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(Back API Symfony)</small> </a>
+                                        <a href="https://github.com/DannyUprajay/Angular_NFT_HOME" target="_blank" rel="noopener noreferrer" className={"me-4 font-bold"}>Code <small>(front)</small>  <br/></a>
 
 
 
@@ -119,10 +120,10 @@ const Home = () => {
                                 </div>
                                 <div className="p-6 mt-5">
                                     <h6
-                                        className="block  mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
+                                        className="block  mb-4 font-sans antialiased font-semibold leading-relaxed tracking-normal text-gray-700 uppercase">
                                         MMA PULSE
                                     </h6>
-                                    <p className="block mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+                                    <p className="block mb-8 font-sans antialiased font-normal leading-relaxed ">
                                         MMA PULSE est un site pour explorer le club, ses sports et plus encore ...
                                     </p>
                                     <div className={'mb-5 flex justify-around'}>
@@ -144,12 +145,14 @@ const Home = () => {
                     </div>
 
                 </section>
+
+                <a name="contact"></a>
                 <section className="" id="contact">
                     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
                         <div className="mb-4">
                             <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
                                 <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
-                                    Mon profil vous intéresse ?   </p>
+                                    Mon profil vous intéresse ? </p>
                                 <h2
                                     className="font-heading mb-4 mt-5 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
                                     Contactez-moi
@@ -161,9 +164,7 @@ const Home = () => {
                             <div className="grid md:grid-cols-2">
                                 <div className="h-full pr-6">
                                     <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                                        Class aptent taciti sociosqu ad
-                                        litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
-                                        sagittis ante, ac tincidunt sem venenatis ut.
+                                       N'hésitez pas à me contacter pour tout complément d'information, ou toute autre question =)
                                     </p>
                                     <ul className="mb-6 md:mb-0">
                                         <li className="flex">
@@ -197,7 +198,7 @@ const Home = () => {
                                             <div className="ml-4 mb-4">
                                                 <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
                                                 </h3>
-                                                <p className="text-gray-600 dark:text-slate-400">Numéro: 07-67-41-39-01</p>
+                                                <p className="text-gray-600 dark:text-slate-400">Numéro: 07.67.41.39.01</p>
                                                 <p className="text-gray-600 dark:text-slate-400">E-mail: danny.uprajay@gmail.com</p>
                                             </div>
                                         </li>
@@ -224,7 +225,7 @@ const Home = () => {
                                             </div>
                                         </div>
                                         <div className="text-center">
-                                            <button type="submit" className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0" value="Send">Send Message</button>
+                                            <button type="submit" className="w-full px-6 py-3 font-xl rounded-md sm:mb-0" value="Send">Send Message</button>
                                         </div>
                                     </form>
                                 </div>

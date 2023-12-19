@@ -47,27 +47,27 @@ const Nav = () => {
                     >
                         <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 ">
                             <li>
-                                <Link to="/"
+                                <a href="#presentation"
                                     className="block py-2 px-3 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                 >
                                     Présentation
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    to="/projet"
+                                <a
+                                    href="#projet"
                                     className="block py-2 px-3  text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                 >
                                     Projets
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link
-                                    to="contact"
+                                <a
+                                    href="#contact"
                                     className="block py-2 px-3 text-center rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:underline md:p-0  dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
                                 >
                                     Me contacter
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>

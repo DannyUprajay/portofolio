@@ -6,15 +6,16 @@
     padding: 0;
     box-sizing: border-box;
     /*background-color: #c4bfe7;*/
+    scroll-behavior: smooth;
 
 }
 nav {
-    color: #1b3650;
-    background-color: #cbf0f8;
+    color: white;
+    background-color: #1b3650;
 }
 
 nav ul li{
-    color: #1b3650;
+    color: white;
 }
 body{
     background-color: #4e5f51;
@@ -84,6 +85,10 @@ main h1 span{
     color: #f3ddc6;
 }
 
+.presentation i{
+    font-size: 2rem;
+}
+
 .card{
     background-color: #4e5f51;
     border: 1px solid white;
@@ -96,7 +101,6 @@ p {
 .projet h6{
     font-size: 1.5rem;
 }
-
 hr {
     width:90%;
     position: relative;
@@ -106,8 +110,253 @@ hr {
 #contact{
     background-color: #1b374e;
 }
+form button {
+    background-color: #1b374e!important;
+    color: white;
+}
+.projet .card{
+  width: 740px;
 
-footer{
-    background-color: #4e5f51;
 }
 
+@media screen and (max-width: 1023px){
+    .presentation img{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+   .portofolio h1{
+        font-size: 6rem;
+
+    }
+
+    #contact{
+       height: 120vh;
+    }
+    .projet{
+        padding: 10px;
+    }
+    .presentation i{
+        font-size: 1.5rem;
+    }
+    .projet .card{
+        width: 600px;
+        height: 300px;
+    }
+    .projet .card p,h3,a{
+        font-size: .7rem;
+    }
+
+    .projet .card img{
+        width: 250px;
+    }
+
+    .presentation{
+        height: 70vh;
+    }
+    .presentation img{
+        display: none;
+    }
+
+    .presentation button{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 702px){
+    .presentation p {
+        font-size: 1.8vh;
+        padding: 2px;
+    }
+    .presentation h2 {
+        font-size: 4vh;
+    }
+    .presentation {
+        height: 50vh;
+    }
+    .projet h2{
+        font-size: 4vh;
+    }
+    .projet a{
+        font-size: .8rem;
+
+    }
+}
+
+@media screen and (max-width: 632px){
+    .projet .card {
+        width: 550px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 582px){
+
+    .projet .card {
+        width: 500px;
+        height: 280px;
+    }
+    .projet .card p,h3{
+        font-size: .6rem;
+    }
+.projet a{
+    font-size: .6rem;
+}
+    .projet .card img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 582px){
+
+    .projet .card {
+        width: 450px;
+        height: 280px;
+    }
+    .projet .card p,h3{
+        font-size: .6rem;
+    }
+    .projet a{
+        font-size: .6rem;
+    }
+    .projet .card img{
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 510px){
+    .portofolio h1 {
+        font-size: 8vh;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .projet .card {
+        width: 400px;
+        height: 280px;
+    }
+    .projet h6{
+        font-size: 1vh;
+
+    }
+    .projet .card p{
+        font-size: 1vh;
+    }
+    .projet .card h3{
+        font-size: 1vh;
+    }
+
+    .projet a{
+        font-size: 1vh;
+    }
+    .projet .card img{
+        width: 170px;
+        height: 279px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .projet .card {
+        width: 380px;
+        height: 200px;
+    }
+    .projet h6{
+        font-size: 1vh;
+        position: relative;
+        top: -30px;
+    }
+    .projet .card p{
+        font-size: 1vh;
+        position: relative;
+        top: -30px;
+    }
+    .projet .card h3{
+        font-size: 1vh;
+        position: relative;
+        top: -50px;
+    }
+
+    .projet a{
+        font-size: 1vh;
+        position: relative;
+        top: -60px;
+    }
+    .projet .card img{
+        width: 170px;
+        height: 199px;
+    }
+}
+
+@media screen and (max-width: 422px){
+
+    .presentation{
+        height: 60vh;
+    }
+    .projet .card {
+        width: 380px;
+        height: 200px;
+    }
+    .projet h6{
+        font-size: 1vh;
+        position: relative;
+        top: -30px;
+    }
+    .projet .card p{
+        font-size: 1vh;
+        position: relative;
+        top: -30px;
+    }
+    .projet .card h3{
+        font-size: 1vh;
+        position: relative;
+        top: -50px;
+    }
+
+    .projet a{
+        font-size: 1vh;
+        position: relative;
+        top: -60px;
+    }
+    .projet .card img{
+        width: 170px;
+        height: 199px;
+    }
+}
+
+@media screen and (max-width: 410px){
+
+    .projet .card {
+        width: 330px;
+        height: 200px;
+    }
+    .projet h6{
+        font-size: .9vh;
+        position: relative;
+        top: -30px;
+    }
+    .projet .card p{
+        font-size: .9vh;
+        position: relative;
+        top: -30px;
+    }
+    .projet .card h3{
+        font-size: .9vh;
+        position: relative;
+        top: -50px;
+    }
+
+    .projet a{
+        font-size: .9vh;
+        position: relative;
+        top: -60px;
+    }
+
+    #contact{
+        height: 130vh;
+
+    }
+
+}

@@ -18,8 +18,8 @@ function App() {
             <Nav/>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
-                <Route path={"/projet"} element={<Projet/>}/>
-                <Route path={"/contact"} element={<Contact/>}/>
+                {/*<Route path={"/projet"} element={<Projet/>}/>*/}
+                {/*<Route path={"/contact"} element={<Contact/>}/>*/}
             </Routes>
 
         </>
