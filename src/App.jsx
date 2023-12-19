@@ -22,23 +22,6 @@ function App() {
                 <Route path={"/contact"} element={<Contact/>}/>
             </Routes>
 
-            {/*<main>*/}
-            {/*    <section className="grid grid-cols-1 text-center justify-center items-center  relative">*/}
-            {/*        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">*/}
-            {/*            <h1 className="font-bold">Portofolio <span>Danny</span></h1>*/}
-            {/*            <p>*/}
-            {/*                Bonjour, je suis développeur web*/}
-            {/*            </p>*/}
-            {/*        </div>*/}
-            {/*        <img*/}
-            {/*            src="src/assets/portofolioImg.png"*/}
-            {/*            alt="desing anime"*/}
-            {/*            className="mx-auto my-4"*/}
-            {/*        />*/}
-            {/*    </section>*/}
-            {/*</main>*/}
-
-
         </>
 
 

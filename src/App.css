@@ -9,16 +9,15 @@
 
 }
 nav {
-    color: #ffffff;
-    background-color: black;
-    border-bottom: 1px solid white; /* Added 'solid' as the border style */
+    color: #1b3650;
+    background-color: #cbf0f8;
 }
 
 nav ul li{
-    color: #ffffff;
+    color: #1b3650;
 }
 body{
-    background-color: #000000;
+    background-color: #4e5f51;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -28,7 +27,7 @@ body{
     transition: opacity 0.5s ease-out;
 }
 section{
-    height: 90vh;
+    height: 100vh;
     /*background-color: #1b374e;*/
 }
 .portofolio {
@@ -53,7 +52,7 @@ main h1{
 }
 
 main h1 span{
-    color: #49a098;
+    color: #1b3650;
 }
 
 
@@ -68,8 +67,8 @@ main h1 span{
  }
 
  .presentation{
-     background-color: #1b374e;
-     color: #f3ddc6;
+
+  color: white;
      height: 110vh;
  }
  .presentation img{
@@ -84,23 +83,31 @@ main h1 span{
     background-color: #49a098;
     color: #f3ddc6;
 }
-h5{
-    color: black;
-    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-    -webkit-text-stroke: 3px white;
-    font-size: 100px!important;
-    position: absolute;
-    letter-spacing: 50px;
-    /*left: 250px;*/
-    /*width: 100%;*/
-}
-.projet{
-    background-color: black;
-}
+
 .card{
-    background-color: red;
+    background-color: #4e5f51;
+    border: 1px solid white;
 }
 
 p {
   font-size: 1.2rem;
 }
+
+.projet h6{
+    font-size: 1.5rem;
+}
+
+hr {
+    width:90%;
+    position: relative;
+    left: 5%;
+}
+
+#contact{
+    background-color: #1b374e;
+}
+
+footer{
+    background-color: #4e5f51;
+}
+
