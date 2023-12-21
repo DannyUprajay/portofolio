@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import './App.css';
 import emailjs from '@emailjs/browser';
 import validator from "validator/es";
+import assets from "./asset.tsx";
 
 const Home = () => {
 
@@ -43,11 +44,11 @@ const Home = () => {
             <main>
                 <section className="portofolio text-center ">
 
-                        <h1 className="font-bold ">Portofolio <span>Danny</span></h1>
+                        <h1 className="font-bold ">Portfolio <span>Danny</span></h1>
 
 
                     <img
-                        src="src/assets/ezsn_zsmz_220227-removebg-preview.png"
+                        src={assets.computer}
                         alt="desing anime"
                         className="mx-auto my-4"
                     />
@@ -56,16 +57,19 @@ const Home = () => {
                 <hr/>
                 <a name="presentation"></a>
                 <section className={"presentation"}>
-                    <h2 className={'text-center'}>Présentation </h2>
+                    <h2 className={'text-center lg:w-3/5'}>Présentation </h2>
                     <div className={'grid lg:grid-cols-2 md:grid-cols-1 container mx-auto'}>
-                        <div className={'text-center mt-20'}>
+
+                        <div className={'text-center mt-20 lg:mt-52'}>
+
                             <p className={'text-center mb-10'}>
+
                               <span>Salut</span>, je m'appelle Danny, j'ai 27 ans et je suis développeur web.  J'ai récemment achevé ma formation en développement web chez Human Booster, validant ainsi le titre RNCP niveau 5 (BAC+ 2). Je souhaite désormais mettre en pratiques mes compétences dans le monde professionnel.
                             </p>
                             <p className={'mb-10'} >| Technologies :  <i
                                 className="fa-brands fa-symfony "></i> <i className="fa-brands fa-angular"></i> <i className="fa-brands fa-react"></i> <i className="fa-solid fa-database"></i>
                                 <i className="fa-brands fa-bootstrap"></i> <i className="fa-brands fa-figma"></i> |</p>
-                            <a href="src/assets/Uprajay_danny_cv.pdf" download={"Cv"}>
+                            <a href={assets.cv} download={"Cv"}>
                                 <button className="font-bold py-2 px-4 rounded inline-flex items-center">
                                     <svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
                                     <span>Télécharger mon CV</span>
@@ -92,7 +96,7 @@ const Home = () => {
                             <div className="overflow-hidden card relative flex bg-clip-border rounded-xl bg-white text-gray-700 border-white shadow-md  flex-row">
 
                                 <div className=" m-0 text-gray-700 rounded-r-none overflow-hidden  bg-clip-border rounded-xl shrink-0">
-                                    <img src="src/assets/lové-logo.png" alt="card-image-projetNft" className=" object-cover w-80 h-full " />
+                                    <img src={assets.logoNft} alt="card-image-projetNft" className=" object-cover w-80 h-full " />
                                 </div>
 
                                 <div className="p-6 mt-5 w-10/12 justify-end ">
@@ -134,7 +138,7 @@ const Home = () => {
                                 <div
                                     className="relative w-5/5 m-0 overflow-hidden  text-gray-700 bg-white rounded-r-none bg-clip-border rounded-xl shrink-0">
                                     <img
-                                        src="src/assets/mmalogo.PNG"
+                                        src={assets.logoMma}
                                         alt="card-image-projetNft" className="object-cover w-80 h-full" />
                                 </div>
                                 <div className="p-6 mt-5">
